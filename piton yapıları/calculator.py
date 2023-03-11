@@ -63,4 +63,3 @@ def calculate():
 if __name__ == '__main__':
     app.run(debug=True)
     
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
