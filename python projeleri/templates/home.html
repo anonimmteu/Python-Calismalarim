@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Python Hesap Makinesi</title>
+</head>
+<body>
+    <h1>Python Hesap Makinesi</h1>
+    <form action="/calculate" method="post">
+        <label for="num1">Birinci Sayı: </label>
+        <input type="text" id="num1" name="num1"><br>
+
+        <label for="num2">İkinci Sayı: </label>
+        <input type="text" id="num2" name="num2"><br>
+
+        <label for="operation">İşlem Türü: </label>
+        <select name="operation" id="operation">
+            <option value="add">Toplama</option>
+            <option value="subtract">Çıkarma</option>
+            <option value="multiply">Çarpma</option>
+            <option value="divide">Bölme</option>
+        </select><br>
+
+        <input type="submit" value="Hesapla">
+    </form>
+</body>
+</html>
+
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
